@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <title>Двумерные графики</title>
+  <meta charset="UTF-8">
+  <link rel="mainicon" type="image/x-icon" sizes="32x32" href="mainicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+  <div>Введите функцию:</div>
+  <div>
+    f(x) = <input type="text" id="func" name="func" placeholder="x">
+  </div>
+  <div>Задайте диапозоны значений по осям:</div>
+  <div>
+    x = [ <input type="text" name="minX" id="minX" placeholder="-10"> ;
+      <input type="text" name="maxX" id="maxX" placeholder="10"> ]
+  </div>
+  <div>
+    y = [ <input type="text" name="minY" id="minY" placeholder="-10"> ;
+      <input type="text" name="maxY" id="maxY" placeholder="10"> ]
+
+    <input name="checkY" onclick="clickCheckY()" id="checkY" type="checkbox"/> auto
+  </div>
+
+  <button name="drawBttn" id="drawBttn" onclick="clickDraw()"> Нарисовать </button>
+  <div>
+    <button name="clearBttn" id="clearBttn" onclick="clickClear()"> Очистить </button>
+  </div>
+  <div id="errors"> </div>
+  <canvas id="canvas" width="1000" height="1000"> </canvas>
+
+</body>
+</html>
