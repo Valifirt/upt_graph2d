@@ -113,7 +113,7 @@ function init() {
     throw new Error('Неверно введены значения Х');
   };
 
-  checkY = document.getElementById('checkY');
+  var checkY = document.getElementById('checkY');
   if(checkY.checked) {
     minY = minX;
     maxY = maxX;
